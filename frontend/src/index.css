@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  /* Sidebar hidden on mobile */
+  .sidebar {
+    display: none !important;
+  }
+
+  /* Mobile navbar */
+  .mobile-nav {
+    display: flex !important;
+  }
+
+  /* Full width on mobile */
+  .main-content {
+    width: 100% !important;
+    padding: 15px !important;
+  }
+
+  /* Stack cards on mobile */
+  .cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Table scroll on mobile */
+  .table-container {
+    overflow-x: auto !important;
+  }
+
+  /* Form full width on mobile */
+  .form-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 20px !important; }
+  h2 { font-size: 18px !important; }
+  .card-value { font-size: 20px !important; }
+}
